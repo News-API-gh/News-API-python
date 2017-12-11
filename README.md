@@ -11,13 +11,13 @@ To check the installation, open a terminal and type:
 python
 ```
 then, try to import the package:
-```python3
+```python
  from newsapi import newsapi
 ```
 If no error appears, the package have been succesfully installed.
 
 ##Example
-```python3
+```python
 from newsapi import newsapi
 
 apiKey = "2809dbe4cfe044708cacd93879af483e"
