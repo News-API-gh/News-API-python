@@ -1,23 +1,3 @@
-# News API SDK for Python
-
-## Installation
-Download this repository on your machine, then open a terminal in the folder. To install type:
-```bash
-python setup.py install
-```
-(please note that sudo may be required)
-To check the installation, open a terminal and type:
-```bash
-python
-```
-then, try to import the package:
-```python
- from newsapi import newsapi
-```
-If no error appears, the package have been succesfully installed.
-
-##Example
-```python
 from newsapi import newsapi
 
 apiKey = "2809dbe4cfe044708cacd93879af483e"
@@ -45,4 +25,3 @@ newsapi.getTopHeadlines(apiKey=apiKey,source="the-next-web,the-verge")
 newsapi.getTopHeadlines(apiKey=apiKey,q="Trump")
 #Top headlines from business sources in English
 newsapi.getTopHeadlines(apiKey=apiKey,category="business",language="en")
-```
