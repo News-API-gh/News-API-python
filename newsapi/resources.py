@@ -1,5 +1,4 @@
 from .client import Client
-from newsapi import API_URL_BASE
 
 
 class BaseResource:
@@ -7,7 +6,7 @@ class BaseResource:
     endpoint = None
 
     def list(self, **params):
-        client = Client(API_URL_BASE)
+        client = Client()
         return client.get(self.endpoint, params)
 
 
