@@ -5,9 +5,11 @@ class BaseResource:
 
     endpoint = None
 
+    def __init__(self):
+        self.client = Client()
+
     def list(self, **params):
-        client = Client()
-        return client.get(self.endpoint, params)
+        return self.client.get(self.endpoint, params)
 
 
 class TopHeadlines(BaseResource):

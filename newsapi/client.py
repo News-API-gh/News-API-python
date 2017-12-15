@@ -5,8 +5,7 @@ from .errors import NewsAPIError
 
 class Client:
 
-    def __init__(self, timeout=80):
-        self._timeout = timeout
+    def __init__(self):
         self._session = requests.Session()
 
         from newsapi import API_KEY
