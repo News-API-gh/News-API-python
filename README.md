@@ -1,7 +1,35 @@
 # News API SDK for Python
-Coming soon... this is where our officially supported SDK for Python is going to live.
 
-***
+## Installation
 
-## Developers... we need you!
-We need some help fleshing out this repo. If you're a Python dev with experience building PyPI-compatible libraries and web API wrappers, we're offering a reward of $250 to help us get started. For more info please email support@newsapi.org, or dive right in and send us a pull request.
+```shell
+pip install news-api
+```
+
+## Usage
+
+### Initilisation
+
+```python
+from api.news import News
+
+n = News(api_key=<api_key>)
+```
+
+### Sources
+
+```python
+n.list_sources()
+```
+
+### Everything
+
+```python
+n.get_everything(q="bitcoin")
+```
+
+### Top Headlines
+
+```python
+n.get_top_headlines(q="bitcoin")
+```
